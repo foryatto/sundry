@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>历史上的今天</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+</head>
+
+<body style="background-color: rgb(238,243,247);">
+    <div id="app" style="width: 95%; margin: 5px auto;">
+        <div class="list-group">
+            <aspan class="list-group-item active">
+                <h4 class="list-group-item-heading">
+                    历史上的今天
+                </h4>
+            </aspan>
+            <span v-for="d in data.data">
+                <span class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        {{ d.year }}年{{ d.month }}月{{ d.day }}日
+                    </h4>
+                    <p class="list-group-item-text">
+                        {{ d.title }}
+                    </p>
+                </span>
+            </span>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    data: '',
+                }
+            },
+            mounted() {
+                axios
+                    .get('https://api.muxiaoguo.cn/api/lishijr')
+                    .then(response => {
+                        console.log(response); //查看接口返回的数据
+                        this.data = response.data;
+                    })
+                    .catch(function (error) { // 请求失败处理
+                        console.log(error);
+                    });
+            },
+            methods: {
+            }
+        });
+    </script>
+</body>
+
+</html>
