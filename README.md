@@ -1,6 +1,6 @@
 # sundry
 
-存放杂七杂八的项目
+
 
 ## Android
 
