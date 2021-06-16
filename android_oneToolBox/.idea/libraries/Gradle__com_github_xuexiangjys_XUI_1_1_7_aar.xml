@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xuexiangjys:XUI:1.1.7@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4ca6e4657030794eb69c48fb7c9586f/jetified-XUI-1.1.7/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4ca6e4657030794eb69c48fb7c9586f/jetified-XUI-1.1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4ca6e4657030794eb69c48fb7c9586f/jetified-XUI-1.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4ca6e4657030794eb69c48fb7c9586f/jetified-XUI-1.1.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xuexiangjys/XUI/1.1.7/f3e317c3d8c94d22ae02a74a78db9069c0cd52cd/XUI-1.1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xuexiangjys/XUI/1.1.7/11d9331fa9bfd94dee85e2f325abd4f344d4eb46/XUI-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
